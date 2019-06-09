@@ -1,0 +1,331 @@
+@font-face {
+    font-family: 'Museo';
+    src: url(../assets/fonts/museo/museo-300-webfont.woff) format("woff");
+}
+
+body{
+  background: url('https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true');
+  font-family: "Museo", sans-serif;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  margin: 20px 75px;
+  margin-bottom: 25px;
+}
+#left {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 25%;
+}
+#right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.icon {
+	width: 50px;
+}
+a{
+  text-decoration: none;
+  color: grey
+}
+p{
+  color: white
+}
+#student-feature {
+  margin: 0px 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr) 2fr;
+	grid-template-rows: repeat(2, 1fr) 200px; 
+	grid-gap: 25px;
+  height: 700px;
+}
+#student-feature>img {
+	width: 100%;
+}
+ #focus {
+   border: 10px solid white;
+	background: url('https://66.media.tumblr.com/ab6b361f5cd080816c3ff4aff4a1a87a/tumblr_pqtyzwGc8V1rd35y6_500.jpg');
+	background-size: cover;
+	background-position: center;
+	grid-column-start: 1 ;
+	grid-column-end: 4;
+	grid-row-start: 1; 
+	grid-row-end: 3;
+}
+#slideshow{
+	position: relative;
+	max-width: 100%;
+  margin: 0 auto;
+	max-width: 100%;
+  top: -20px
+}
+#slideshow >div{
+  width: 97.6%;
+  background-color: #666;
+  position: absolute;
+  top: 421px;
+  overflow: none;
+  text-align: right;
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+}
+.arrow{
+	max-height:75px
+}
+#arrow-l{
+  position: absolute;
+	top: 225px;
+	left: -26px;
+}
+#arrow-r{
+  position: absolute;
+	top: 225px;
+	left: 812px;
+}
+#position-one {
+  border: 10px solid white;
+	background: url('https://66.media.tumblr.com/569d6132222e313586b9ce2f1cd175ca/tumblr_pqweo8asvq1rd35y6_500.jpg');
+	background-position: center;
+	background-size: cover;
+	grid-column-start: 1 ;
+	grid-column-end: 2;
+	grid-row-start: 3; 
+	grid-row-end: 4;
+}
+#position-two {
+     border: 10px solid white;
+	background: url('https://66.media.tumblr.com/dc770f7c9193e62062a63515ec0dd233/tumblr_pr6zmhcLOR1rd35y6_500.jpg');
+	background-position: center;
+	background-size: cover;
+	grid-column-start: 2 ;
+	grid-column-end: 3;
+	grid-row-start: 3; 
+	grid-row-end: 4;
+  object-fit: cover;
+  height: 180px;
+}
+#position-two> img{
+   height: 180px;
+}
+#position-three {
+     border: 10px solid white;
+	background: url('https://66.media.tumblr.com/352292b81698c4fd7b254a5276b80878/tumblr_pr6zmgRqSd1rd35y6_500.jpg');
+	background-position: center;
+	background-size: cover;
+	grid-column-start: 3 ;
+	grid-column-end: 4;
+	grid-row-start: 3; 
+	grid-row-end: 4;
+}
+#bio {
+	background: white;
+	grid-column-start: 4 ;
+	grid-column-end: 5;
+	grid-row-start: 1; 
+	grid-row-end: 2;
+  display: flex;
+  justify-content: flex-end; 
+}
+#contact{
+  height: 175px;
+  display: flex; 
+  margin: 20px 5px;
+  line-height: 0.1;
+  
+}
+#contact > h3{
+  color:#666;
+  font-size: 24px;
+  line-height: 0.1;
+  
+}
+#contact > p {
+  color: grey;
+  font-size: 20px;
+}
+#bio> img{
+  height: 205px;
+  width: 150px;
+  margin: 10px;
+}
+#project-detail {
+	background: white;
+	grid-column-start: 4 ;
+	grid-column-end: 5;
+	grid-row-start: 2; 
+	grid-row-end: 4;
+}
+#contact{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#project-detail> h3{
+  color: grey;
+  font-size: 32px;
+  margin: 20px 0px 0px 25px;
+  
+}
+#project-detail> p{
+  color: grey;
+  font-size: 24px;
+  margin: 20px 10px 0px 25px
+}
+#gallery{
+  display: flex;
+  flex-direction: column;
+  width: 95%; 
+  justify-content: space-between;
+  height: 425px;
+  margin: 0px 20px 100px 20px;
+  
+}
+.gallery{
+	max-width: 24%;
+  height: 200px;
+
+}
+.set{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+.title{
+  color: grey;
+	font-size: 30px;
+  margin: 50px 0px 0px 20px;
+}
+
+#tweet{
+  width: 100%;
+  background-color: #666;
+  overflow: none;
+  text-align: center;
+  font-size: 24px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 10px grey;
+}
+#tweet >img {
+  height: 30px;
+  margin: 10px;
+  transform: rotate(25deg);
+}
+#tweet >p {
+  margin: 10px; 
+}
+#time{
+  font-size: 16px;
+  align-self: flex-end;
+  
+}
+footer{
+  width:100%;
+  	background: url('https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true');
+	color: white;
+  background-color: #666;
+	background-blend-mode: overlay;
+}
+#footer-columns{
+  display: flex;
+  justify-content: space-between;
+  overflow: none;
+}
+#f1{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 30%;
+}
+#search{
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0px 0px 30px 5px;
+  position: relative;
+  top: -35px
+}
+#f1 >#search>img {
+  height: 20px;
+  margin: 1px 5px 0px 0px;
+  margin: 0px 0px 30px 5px;
+  position: relative;
+  left: 5px;
+  top: 15px
+}
+#f1 > h3 {
+  position: relative;
+  left: 5px;
+  padding: 5px 0px 10px 0px
+}
+
+#f1 >#search>p{
+  color: grey;
+  font-size: 24px;
+  margin: 0px 0px 30px 5px;
+  position: relative;
+  top: 15px;
+  left: 10px
+}
+#f1>p{
+  margin: 0px 0px 30px 5px;
+  position: relative;
+  top: -20px;
+}
+#repeat{
+  margin:  20px 0px 0px 10px ;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px
+}
+
+#f2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+  justify-content: flex-start;
+}
+#f2> h3 {
+ margin: 50px 0px 10px 0px;
+}
+#f1, #f2, #f3 > h3 {
+  color: #666;
+  align-self: flex-start;
+  pading: 0;
+}
+#f3{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 40px 40px;  
+}
+#small{
+  position: relative;
+  top: -55px;
+  left: -5px;
+}
+.small-set{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+  max-width: 29%;
+  position: relative;
+  top: 50px;
+ 
+}
+.gallery2{
+	max-width: 100px;
+  height: 60px;
+  margin: 3px;
+}
